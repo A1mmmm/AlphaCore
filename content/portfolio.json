@@ -1,0 +1,65 @@
+[
+  {
+    "slug": "internet-magazin-mebeli",
+    "title": "Интернет-магазин мебели",
+    "category": "Интернет-магазины",
+    "thumbnail": "/images/portfolio/furniture-store-cover.jpg",
+    "gallery": [
+      "/images/portfolio/furniture-store-1.jpg",
+      "/images/portfolio/furniture-store-2.jpg"
+    ],
+    "shortDescription": "Магазин мебели с удобным каталогом, фильтрами и онлайн-оплатой.",
+    "challenge": "Клиенту нужен был магазин, который упростит выбор мебели и увеличит количество заказов через сайт.",
+    "process": [
+      "Анализ текущих продаж и позиций в каталоге",
+      "Проработка структуры каталога и фильтров",
+      "Дизайн с акцентом на визуал товара",
+      "Верстка и интеграция с CMS",
+      "Подключение онлайн-оплаты и доставки"
+    ],
+    "result": "+42% заявок с сайта за 3 месяца после запуска",
+    "technologies": ["Next.js", "Tailwind CSS", "Stripe", "CRM-интеграция"]
+  },
+  {
+    "slug": "korporativnyy-sayt-b2b-servisa",
+    "title": "Сайт для B2B-сервиса",
+    "category": "Корпоративные сайты",
+    "thumbnail": "/images/portfolio/b2b-cover.jpg",
+    "gallery": [
+      "/images/portfolio/b2b-1.jpg",
+      "/images/portfolio/b2b-2.jpg"
+    ],
+    "shortDescription": "Корпоративный сайт с акцентом на ценность сервиса и кейсы.",
+    "challenge": "Сложно было быстро объяснить продукт и провести пользователя к заявке.",
+    "process": [
+      "Интервью с отделом продаж",
+      "Сбор частых вопросов клиентов",
+      "Прототипирование структуры и ключевых экранов",
+      "Дизайн, усиление акцентов на ценности",
+      "Верстка, интеграции с CRM и аналитикой"
+    ],
+    "result": "Рост обращений через сайт и сокращение цикла объяснения продукта",
+    "technologies": ["Next.js", "Tailwind CSS", "HubSpot", "Google Analytics"]
+  },
+  {
+    "slug": "landing-onlayn-kursa",
+    "title": "Лендинг онлайн-курса",
+    "category": "Лендинги",
+    "thumbnail": "/images/portfolio/course-landing-cover.jpg",
+    "gallery": [
+      "/images/portfolio/course-landing-1.jpg",
+      "/images/portfolio/course-landing-2.jpg"
+    ],
+    "shortDescription": "Лендинг под запуск онлайн-курса с прогретой структурой блока.",
+    "challenge": "Нужно было сохранить узнаваемый стиль бренда и при этом добиться высокой конверсии.",
+    "process": [
+      "Анализ прошлых запусков и посадочных страниц",
+      "Сбор возражений и триггеров целевой аудитории",
+      "Создание прототипа и сценария скролла",
+      "Дизайн, адаптив и анимации",
+      "Интеграция с платформой курса"
+    ],
+    "result": "Конверсия из трафика в заявку 5–8% в зависимости от кампании",
+    "technologies": ["Tilda", "Custom CSS", "Facebook Pixel"]
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "slug": "kak-podgotovit-biznes-k-saytu",
+    "title": "Как подготовить бизнес к разработке сайта",
+    "excerpt": "Какие вопросы продумать заранее, чтобы сайт приносил заявки, а не просто существовал.",
+    "topic": "разработка",
+    "publishedAt": "2024-01-10",
+    "readingTime": 7
+  },
+  {
+    "slug": "osnovy-seo-struktury-dlya-malyh-biznesov",
+    "title": "Основы SEO-структуры для малого бизнеса",
+    "excerpt": "Разбираемся, как правильно собрать структуру сайта под поисковый трафик.",
+    "topic": "seo",
+    "publishedAt": "2024-02-05",
+    "readingTime": 6
+  },
+  {
+    "slug": "minimalistichnyy-dizayn-kotoryy-prodaet",
+    "title": "Минималистичный дизайн, который продаёт",
+    "excerpt": "Почему лаконичный дизайн часто работает лучше, чем перегруженные экраны.",
+    "topic": "дизайн",
+    "publishedAt": "2024-03-12",
+    "readingTime": 5
+  }
+]
