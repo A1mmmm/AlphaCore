@@ -10,7 +10,7 @@ import { FooterSection } from "@/sections/footer";
 
 export default function HomePage() {
   return (
-    <main className="flex min-h-screen flex-col bg-background text-foreground">
+    <>
       <HeroSection />
       <BenefitsSection />
       <ServicesSection />
@@ -20,6 +20,6 @@ export default function HomePage() {
       <FAQSection />
       <ContactSection />
       <FooterSection />
-    </main>
+    </>
   );
 }

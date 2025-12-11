@@ -15,16 +15,15 @@ export function HeroSection() {
             className="space-y-6"
           >
             <p className="inline-flex rounded-full bg-accent.soft px-4 py-1 text-xs font-medium uppercase tracking-[0.2em] text-accent md:text-[11px]">
-              Сайты, которые приводят клиентов
+              Веб-разработка с гарантией результата
             </p>
             <h1 className="text-3xl font-semibold tracking-tight md:text-4xl lg:text-5xl">
-              Запускаю сайты, которые
-              <span className="block text-accent">приносят клиентов</span>
+              Создаю сайты, которые
+              <span className="block text-accent">продают ваши услуги</span>
             </h1>
             <p className="max-w-xl text-sm text-neutral-600 md:text-base">
-              Помогаю бизнесу увеличить поток заявок и расти за счёт правильно
-              выстроенной онлайн-системы: от первой идеи до стабильного потока
-              лидов из сайта.
+              Разрабатываю эффективные веб-решения для бизнеса: от лендингов до интернет-магазинов. 
+              Каждый проект окупается за счет продуманной структуры и конверсионного дизайна.
             </p>
             <div className="flex flex-wrap items-center gap-4">
               <Button size="lg" className="shadow-md">
@@ -40,7 +39,7 @@ export function HeroSection() {
                 срок запуска типового проекта
               </div>
               <div>
-                <span className="block font-medium text-foreground">> 30</span>
+                <span className="block font-medium text-foreground">30+</span>
                 реализованных проектов
               </div>
               <div>

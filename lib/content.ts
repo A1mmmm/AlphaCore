@@ -58,7 +58,14 @@ export function getBlogBySlug(slug: string): BlogPostMeta | undefined {
 }
 
 export function getServiceList(): ServiceItem[] {
-  return services as ServiceItem[];
+  return (services as any[]).map(service => ({
+    ...service,
+    name: service.title,
+    path: `/services/${service.slug}`,
+    whatIncluded: service.features || [],
+    steps: [],
+    examplesSlugs: []
+  }));
 }
 
 export function getServiceBySlug(slug: string): ServiceItem | undefined {
