@@ -8,18 +8,21 @@ import { Button } from "@/components/ui/button";
 export type CtaFormType =
   | "consultation"
   | "commercial-offer"
-  | "project-request";
+  | "project-request"
+  | "service";
 
 interface CtaFormProps {
   type: CtaFormType;
   title?: string;
   subtitle?: string;
+  serviceTitle?: string;
 }
 
 const typeToLabel: Record<CtaFormType, string> = {
   consultation: "Заказать консультацию",
   "commercial-offer": "Получить коммерческое предложение",
   "project-request": "Оставить заявку на проект",
+  "service": "Оставить заявку на услугу",
 };
 
 export function CtaForm({ type, title, subtitle }: CtaFormProps) {

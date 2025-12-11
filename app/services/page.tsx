@@ -3,9 +3,9 @@ import { getServiceList } from "@/lib/content";
 import { Card } from "@/components/ui/card";
 import { CtaForm } from "@/components/forms/cta-form";
 
-const services = getServiceList();
-
 export default function ServicesPage() {
+  const services = getServiceList();
+  
   return (
     <div className="container py-10 md:py-14 lg:py-16">
       <div className="mb-8 space-y-3">
@@ -21,19 +21,36 @@ export default function ServicesPage() {
 
       <div className="mb-10 grid gap-4 md:grid-cols-2">
         {services.map((service) => (
-          <Link key={service.slug} href={service.path}>
-            <Card className="group flex h-full cursor-pointer flex-col justify-between border-border/80">
+          <Link key={service.slug} href={`/services/${service.slug}`}>
+            <Card className="group flex h-full cursor-pointer flex-col justify-between border-border/80 p-6 transition-colors hover:border-accent/50">
               <div className="space-y-3">
-                <h2 className="text-sm font-semibold md:text-base">
-                  {service.name}
+                <h2 className="text-lg font-semibold text-foreground md:text-xl">
+                  {service.title}
                 </h2>
-                <p className="text-xs text-neutral-600 md:text-sm">
-                  {service.shortDescription}
+                <p className="text-sm text-muted-foreground">
+                  {service.description}
                 </p>
+                {service.features && service.features.length > 0 && (
+                  <ul className="mt-2 space-y-1">
+                    {service.features.slice(0, 3).map((feature, index) => (
+                      <li key={index} className="flex items-start text-sm">
+                        <span className="mr-2 mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-accent" />
+                        <span>{feature}</span>
+                      </li>
+                    ))}
+                    {service.features.length > 3 && (
+                      <li className="text-xs text-muted-foreground">
+                        +{service.features.length - 3} пункта
+                      </li>
+                    )}
+                  </ul>
+                )}
               </div>
-              <div className="mt-4 flex items-center justify-between text-xs text-neutral-500 md:text-sm">
-                <span>{service.priceFrom}</span>
-                <span className="text-[11px] font-medium uppercase tracking-[0.14em] text-accent">
+              <div className="mt-6 flex items-center justify-between">
+                <span className="text-sm font-medium text-foreground">
+                  {service.price}
+                </span>
+                <span className="text-xs font-medium uppercase tracking-wider text-accent">
                   Подробнее →
                 </span>
               </div>

@@ -30,14 +30,19 @@ export interface BlogPostMeta {
   readingTime: number;
 }
 
-export interface ServiceItem {
+interface RawServiceItem {
+  id: number;
   slug: string;
-  name: string;
-  path: string;
-  shortDescription: string;
-  whatIncluded: string[];
+  title: string;
+  description: string;
+  price: string;
+  features: string[];
+  steps?: string[];
+  examplesSlugs?: string[];
+}
+
+export interface ServiceItem extends RawServiceItem {
   steps: string[];
-  priceFrom: string;
   examplesSlugs: string[];
 }
 
@@ -58,16 +63,20 @@ export function getBlogBySlug(slug: string): BlogPostMeta | undefined {
 }
 
 export function getServiceList(): ServiceItem[] {
-  return (services as any[]).map(service => ({
+  return (services as RawServiceItem[]).map(service => ({
     ...service,
-    name: service.title,
-    path: `/services/${service.slug}`,
-    whatIncluded: service.features || [],
-    steps: [],
-    examplesSlugs: []
+    steps: service.steps || [],
+    examplesSlugs: service.examplesSlugs || []
   }));
 }
 
 export function getServiceBySlug(slug: string): ServiceItem | undefined {
-  return getServiceList().find((service) => service.slug === slug);
+  const service = (services as RawServiceItem[]).find((s) => s.slug === slug);
+  if (!service) return undefined;
+  
+  return {
+    ...service,
+    steps: service.steps || [],
+    examplesSlugs: service.examplesSlugs || []
+  };
 }
